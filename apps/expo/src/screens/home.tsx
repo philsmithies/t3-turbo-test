@@ -71,7 +71,7 @@ export const HomeScreen = () => {
     <SafeAreaView className="bg-[#2e026d] bg-gradient-to-b from-[#2e026d] to-[#15162c]">
       <View className="h-full w-full p-4">
         <Text className="mx-auto pb-2 text-5xl font-bold text-white">
-          Create <Text className="text-[#cc66ff]">T3</Text> Turbo
+          Create <Text className="text-red">Language Learning</Text> Turbo Application
         </Text>
 
         <View className="py-2">
@@ -91,7 +91,7 @@ export const HomeScreen = () => {
           data={postQuery.data}
           estimatedItemSize={20}
           ItemSeparatorComponent={() => <View className="h-2" />}
-          renderItem={(p) => (
+          renderItem={(p: any) => (
             <TouchableOpacity onPress={() => setShowPost(p.item.id)}>
               <PostCard post={p.item} />
             </TouchableOpacity>
